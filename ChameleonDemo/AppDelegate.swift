@@ -6,6 +6,8 @@
 //  Copyright © 2015 Vicc Alexander. All rights reserved.
 //
 
+// Modified by Karthikeyan M  on 26, Jan 2020
+
 import UIKit
 import Chameleon
 
@@ -14,12 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
-
-        Chameleon.setGlobalThemeUsingPrimaryColor(.flatPlum,
-            withSecondaryColor: .flatBlue,
-            andContentStyle: .contrast)
-        
+    public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        // Application theme
+        Chameleon.setGlobalThemeUsingPrimaryColor(.flatPlum(), withSecondaryColor: .flatBlue(), andContentStyle: .contrast)
         return true
     }
 
